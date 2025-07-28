@@ -1,22 +1,28 @@
-libgl1-mesa-glx
-libglib2.0-0
-libsm6
-libxext6
-libxrender-dev
-libgomp1
-libgtk-3-0
-libavcodec-dev
-libavformat-dev
-libswscale-dev
-libv4l-dev
-libxvidcore-dev
-libx264-dev
-libjpeg-dev
-libpng-dev
-libtiff-dev
-libatlas-base-dev
-gfortran
-libhdf5-dev
-libhdf5-serial-dev
-libhdf5-103
-python3-dev 
+# Minimal system packages for basic functionality
+# Most packages commented out to avoid deployment conflicts
+
+# Only keep essential packages:
+# libgl1-mesa-glx        # For OpenCV (when needed)
+# libglib2.0-0           # Basic system library
+
+# Commented out packages that might cause conflicts:
+# libsm6
+# libxext6
+# libxrender-dev
+# libgomp1
+# libgtk-3-0
+# libavcodec-dev
+# libavformat-dev
+# libswscale-dev
+# libv4l-dev
+# libxvidcore-dev
+# libx264-dev
+# libjpeg-dev
+# libpng-dev
+# libtiff-dev
+# libatlas-base-dev
+# gfortran
+# libhdf5-dev
+# libhdf5-serial-dev
+# libhdf5-103
+# python3-dev 

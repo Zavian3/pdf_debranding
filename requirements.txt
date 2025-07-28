@@ -1,14 +1,21 @@
+# Essential dependencies for basic app functionality
 streamlit>=1.28.0
-openai>=1.0.0
-Pillow>=10.0.0
-PyMuPDF>=1.23.0
-opencv-python-headless>=4.8.0
-easyocr>=1.7.0
-fuzzywuzzy>=0.18.0
-python-Levenshtein>=0.21.0
-python-dotenv>=1.0.0
-numpy>=1.24.0
-requests>=2.31.0
-torch>=2.0.0
-torchvision>=0.15.0
-scikit-image>=0.20.0
+
+# For basic PDF handling (much lighter than PyMuPDF + PyTorch + EasyOCR)
+# PyMuPDF>=1.23.0  # Commented out - can be added back when needed
+
+# Optional: Only uncomment these when you need full PDF processing
+# Pillow>=10.0.0
+# openai>=1.0.0
+# numpy>=1.24.0
+# requests>=2.31.0
+
+# Heavy packages that cause deployment issues - comment out for now:
+# opencv-python-headless>=4.8.0  # ~200MB
+# easyocr>=1.7.0                 # Requires PyTorch
+# torch>=2.0.0                   # ~2-3GB
+# torchvision>=0.15.0            # ~200MB  
+# scikit-image>=0.20.0           # ~50MB
+# fuzzywuzzy>=0.18.0
+# python-Levenshtein>=0.21.0
+# python-dotenv>=1.0.0
